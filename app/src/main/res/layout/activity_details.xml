@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <!-- Image de l'activité -->
+    <ImageView
+        android:id="@+id/activity_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/default_image" />
+
+    <!-- Nom de l'activité -->
+    <TextView
+        android:id="@+id/activity_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom de l'activité"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Prix de l'activité -->
+    <TextView
+        android:id="@+id/activity_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prix : 0€"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Évaluation de l'activité -->
+    <RatingBar
+        android:id="@+id/activity_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="4.5"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/rounded_image_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back" />
+
+    <!-- Bouton de retour -->
+</LinearLayout>
