@@ -18,6 +18,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.size
 import com.google.android.material.chip.Chip
 import com.google.android.material.chip.ChipGroup
+import kotlin.random.Random
 
 @Suppress("DEPRECATION")
 class addtrip : AppCompatActivity() {
@@ -82,7 +83,7 @@ class addtrip : AppCompatActivity() {
             val intent = Intent(this, app_page::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
-            Toast.makeText(this, "Trip has been registered!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Trip has been registered! You saved 135g of CO2!", Toast.LENGTH_LONG).show()
         }
     }
     private fun registerTrip() {
